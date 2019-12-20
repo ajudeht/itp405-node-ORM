@@ -4,7 +4,7 @@ const Track = require('./models/track');
 const Artist = require('./models/track');
 
 var app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 app.get('/api/artists', function(req, res) {
   Artist.findAll().then((artists) => {
