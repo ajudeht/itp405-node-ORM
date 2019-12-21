@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --detectOpenHandles"
   },
   "engines": {
     "node": "10.x"
@@ -14,7 +14,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "querystring": "^0.2.0",
     "sequelize": "^5.21.3",
     "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
   }
 }
